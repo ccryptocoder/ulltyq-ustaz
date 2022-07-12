@@ -10,3 +10,27 @@
     max-width: 1180px;
     margin: 0 auto;
 }
+
+.title {
+    font-family: 'Philosopher';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    &_bullet-inline {
+        &::before {
+            content: '•';
+            font-size: 1.5em;
+            line-height: 1.5em;
+            position: relative;
+            top: 0.1em;
+            margin-right: 5px;
+            color: inherit;
+        /*  width: 0.313em;
+            height: 0.313em;
+            background-color: currentColor;
+            top: 0.4em;
+            left: -0.5em;
+            border-radius: 100%; */
+        }
+    }
+}
