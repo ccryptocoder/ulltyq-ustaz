@@ -1,0 +1,78 @@
+.promo {
+    background: url('../img/promo-bg.jpg') center center / cover no-repeat;
+    min-height: 635px;
+    padding-bottom: 80px;
+    position: relative;
+    &::before {
+        content: url("data:image/svg+xml,%3Csvg width='170' height='132' viewBox='0 0 170 132' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.13695e-10 4.57764e-05C1.13695e-10 9.15527e-05 0 0.0001297 0 0.000175476C0 39.9982 32.4248 72.4231 72.4229 72.4231C112.421 72.4231 144.846 39.9982 144.846 0.000175476C144.846 0.0001297 144.846 9.15527e-05 144.846 4.57764e-05H105.714C105.714 9.15527e-05 105.714 0.0001297 105.714 0.000175476C105.714 18.3864 90.8091 33.2914 72.4229 33.2914C54.0367 33.2914 39.1317 18.3864 39.1317 0.000175476C39.1317 0.0001297 39.1317 9.15527e-05 39.1317 4.57764e-05H1.13695e-10Z' fill='%23E0E0E0'/%3E%3Crect x='49.2479' y='97.2479' width='24.5829' height='24.5829' stroke='%23AC7D3B' stroke-width='10.4958'/%3E%3Cpath d='M135.5 62L165.378 114.5H105.622L135.5 62Z' fill='black'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        top: 0;
+        right: 60px;
+    }
+    &__block {
+        position: relative;
+        width: 780px;
+        padding: 63px 105px 63px 10px;
+        background: #314C60;
+        border-radius: 0px 2000px 2000px 0px;
+        &::before {
+            content: '';
+            background: #314C60;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: -100%;
+            top: 0;
+        }
+    }
+    &__title {
+        font-family: 'Philosopher';
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 136.4%;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140.9%;
+        color: rgba(255, 255, 255, 0.5);
+        max-width: 380px;
+        margin-top: 25px;
+    }
+    &__scroll {
+        position: absolute;
+        right: 0;
+        bottom: -85px;
+        min-height: 195px;
+        padding: 20px 63px;
+        width: 170px;
+        background: #AC7D3B;
+        border-radius: 700px 0px 0px 700px;
+        &-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 166.4%;
+            color: #FFFFFF;
+            text-decoration: none;
+            span {
+                margin-top: 10px;
+                display: inline-block;
+            }
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: url("data:image/svg+xml,%3Csvg width='16' height='90' viewBox='0 0 16 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.83393' cy='81.473' r='7.83393' fill='%23314C60'/%3E%3Ccircle cx='7.83393' cy='44.6534' r='7.83393' fill='%23314C60'/%3E%3Ccircle cx='7.83393' cy='7.83393' r='7.83393' fill='white'/%3E%3C/svg%3E%0A");
+            right: 18px;
+            bottom: -50px;
+        }
+    }
+}
