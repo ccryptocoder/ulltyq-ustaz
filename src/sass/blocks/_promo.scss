@@ -31,6 +31,17 @@
         font-size: 64px;
         line-height: 136.4%;
         color: #FFFFFF;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: .5em;
+            height: .5em;
+            border-radius: 100%;
+            background-color: #fff;
+            left: -.8em;
+            top: .4em;
+        }
     }
     &__subtitle {
         font-family: 'Rubik';
