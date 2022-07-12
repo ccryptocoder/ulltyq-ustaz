@@ -1,0 +1,61 @@
+.mission {
+    padding: 140px 0;
+    background: url('../img/mission-bg.jpg') center center / cover no-repeat;
+    &__row {
+        display: flex;
+    }
+    &__block {
+        min-height: 390px;
+        padding: 60px 80px 100px 135px;
+        // max-width: 735px;
+        border-radius: 0px 261px 261px 0px;
+        &:nth-child(1) {
+            color: #314C60;
+            background: #E0E0E0;
+            max-width: 600px;
+            padding-left: 40px;
+            padding-right: 140px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100vw;
+                height: 100%;
+                left: -100vw;
+                top: 0;
+                background: inherit;
+            }
+        }
+        &:nth-child(2) {
+            color: #ffffff;
+            background: url('../img/mission-block-2.jpg') center center / cover no-repeat;
+            margin-left: -200px;
+            padding-left: 280px;
+        }
+    }
+    &__title {
+        font-family: 'Philosopher';
+        font-weight: 400;
+        font-size: 64px;
+        // line-height: 166.4%;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0.313em;
+            height: 0.313em;
+            background-color: currentColor;
+            top: 0.4em;
+            left: -0.5em;
+            border-radius: 100%;
+        }
+    }
+    &__text {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140.9%;
+        margin-top: 40px;
+        padding-left: 60px;
+    }
+}
