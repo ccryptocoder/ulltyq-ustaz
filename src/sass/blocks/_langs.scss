@@ -1,0 +1,55 @@
+.langs {
+    padding: 60px 0 90px;
+    background: url('../img/langs-shape.png') left center / contain no-repeat;
+    &__banner {
+        background: url('../img/langs-bg.jpg') center center / cover no-repeat;
+        min-height: 550px;
+        border-radius: 60px;
+    }
+    &__block {
+        max-width: 580px;
+        min-height: 480px;
+        background: #314C60;
+        border-radius: 60px 1000px 1000px 0px;
+        padding: 84px 112px 77px 94px;
+    }
+    &__title {
+        color: #FFFFFF;
+        // padding-left: 30px;
+        margin-left: 30px;
+    }
+    &__list {
+        margin-top: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+        li {
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: url('../img/langs-elem.svg');
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__text {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 94px;
+    }
+}
