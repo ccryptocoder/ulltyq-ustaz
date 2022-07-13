@@ -1,0 +1,64 @@
+.faq {
+    padding: 50px 0 70px;
+    &__title {
+        color: #314C60;
+    }
+    &__wrapper {
+        margin-top: 50px;
+    }
+    &-acc {
+        &__item {
+            padding: 30px 45px;
+            border: 1px solid #314C60;
+            border-radius: 50px;
+            color: #000000;
+            transition: all .3s;
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+            &_active {
+                background: #314C60;
+                color: #FFF;
+                .faq-acc__head {
+                    &::after {
+                        content: url('../icons/faq-acc-less.svg');
+                    }
+                }
+                .faq-acc__body {
+                    // margin-top: 30px;
+                }
+            }
+        }
+        &__head {
+            position: relative;
+            cursor: pointer;
+            &::after {
+                position: absolute;
+                content: url('../icons/faq-acc-more.svg');
+                right: 0px;
+                top: -5px;
+            }
+        }
+        &__title {
+            font-family: 'Philosopher';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            text-transform: uppercase;
+            max-width: 830px;
+        }
+        &__body {
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s ease;
+        }
+        &__text {
+            margin-top: 30px;
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 170%;
+            color: #FFF;
+        }
+    }
+}

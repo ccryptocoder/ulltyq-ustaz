@@ -30,4 +30,20 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         draggable: true,
     });
+
+    const accItem = Array.from(document.querySelectorAll('[data-acc-item]'));
+    const accHead = Array.from(document.querySelectorAll('[data-acc-head]'));
+    const accBody = Array.from(document.querySelectorAll('[data-acc-body]'));
+
+    accHead.forEach((head, i) => {
+        head.addEventListener('click', () => {
+            accItem[i].classList.toggle('faq-acc__item_active');
+            if (accBody[i].style.maxHeight) {
+                accBody[i].style.maxHeight = null;
+              } else {
+                accBody[i].style.maxHeight = accBody[i].scrollHeight + "px";
+              }
+          
+        })
+    })
 });
