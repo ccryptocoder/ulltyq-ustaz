@@ -29,7 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
             },
             1024: {
                 slidesPerView: 3,
-                spaceBetween: 90
+                spaceBetween: 90,
+                centeredSlides: false,
+                autoHeight: false
             },
             768: {
                 slidesPerView: 2,
