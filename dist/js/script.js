@@ -26,6 +26,19 @@ window.addEventListener('DOMContentLoaded', () => {
             1440: {
               slidesPerView: 3,
               spaceBetween: 110
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 90
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 90
+            },
+            320: {
+                slidesPerView: 1,
+                centeredSlides: true,
+                autoHeight: true
             }
         },
         draggable: true,
@@ -40,10 +53,18 @@ window.addEventListener('DOMContentLoaded', () => {
             accItem[i].classList.toggle('faq-acc__item_active');
             if (accBody[i].style.maxHeight) {
                 accBody[i].style.maxHeight = null;
-              } else {
+            } else {
                 accBody[i].style.maxHeight = accBody[i].scrollHeight + "px";
-              }
-          
-        })
+            }
+        });
+    });
+
+    const headerMenu = document.querySelector('[data-header-menu]');
+    const headerHamb = document.querySelector('[data-header-hamburger]');
+
+    headerHamb.addEventListener('click', () => {
+        headerMenu.classList.toggle('header__mob_active');
+        headerHamb.classList.toggle('header__hamburger_active');
     })
+
 });

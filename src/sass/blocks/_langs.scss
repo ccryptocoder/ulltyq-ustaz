@@ -53,3 +53,67 @@
         margin-top: 94px;
     }
 }
+
+@media (max-width: 1023px) {
+    .langs {
+        &__block {
+            max-width: 518px;
+            min-height: 419px;
+            padding: 60px 59px 50px 60px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .langs {
+        padding: 0;
+        background: none;
+        &__container {
+            display: contents;
+        }
+        &__banner {
+            display: flex;
+            flex-direction: column;
+            min-height: 628px;
+            justify-content: flex-end;
+        }
+        &__block {
+            min-height: auto;
+        }
+        &__title {
+            br {
+                display: none;
+            }
+        }
+        &__list {
+            margin-top: 60px;
+            li {
+                font-size: 16px;
+            }
+        }
+        &__text {
+            margin-top: 70px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .langs {
+        &__banner {
+            background: url('../img/langs-bg-mob.jpg') left center / contain no-repeat;
+        }
+        &__block {
+            padding: 42px 80px 55px 18px;
+        }
+        &__list {
+            margin-top: 40px;
+            li {
+                font-size: 14px;
+            }
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}

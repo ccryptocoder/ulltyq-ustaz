@@ -14,3 +14,15 @@
         color: #FFFFFF;
     }
 }
+
+@media (max-width: 1023px) {}
+
+@media (max-width: 575px) {
+    .footer {
+        &__text {
+            &:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+}

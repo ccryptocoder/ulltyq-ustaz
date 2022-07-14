@@ -87,3 +87,56 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+    .promo {
+        min-height: 550px;
+        &__block {
+            padding: 63px 105px 63px 30px;
+            width: 700px;
+        }
+        &__title {
+            font-size: 58px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        &__block {
+            width: 100%;
+        }
+        &__title {
+            font-size: 46px;
+        }
+        &__scroll {
+            min-height: 170px;
+            width: 120px;
+        }
+    }
+}
+
+@media (max-width: 575px)  {
+    .promo {
+        min-height: 620px;
+        background: url('../img/promo-bg-mob.jpg') center center / cover no-repeat;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        &::before {
+            display: none;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 136.4%;
+        }
+        &__block {
+            max-width: 100%;
+            padding: 37px 73px 37px 18px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+}
