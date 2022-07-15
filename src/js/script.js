@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
+    new WOW().init();
+    
     const popupOpen = Array.from(document.querySelectorAll('[data-popup-open]'));
     const popupClose = document.querySelector('[data-popup-close]');
     const popup = document.querySelector('[data-popup]');
