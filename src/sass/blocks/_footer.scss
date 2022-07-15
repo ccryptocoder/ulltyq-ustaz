@@ -6,12 +6,12 @@
         align-items: center;
         justify-content: space-between;
     }
-    &__text {
+    &__text, &__text a {
         font-family: 'Rubik';
         font-weight: 300;
         font-size: 12px;
         line-height: 160%;
-        color: #FFFFFF;
+        color: #FFFFFF; text-decoration: none;
     }
 }
 
