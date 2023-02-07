@@ -82,13 +82,8 @@
 @media (max-width: 575px) {
     .areas {
         position: relative;
-        min-height: 840px;
         padding: 30px 0 35px;
-        background: url('../img/areas-bg-mob.jpg') center center / cover no-repeat;
-        &__title {
-            text-align: left;
-            margin: 0 auto;
-        }
+        background: url('../img/areas-bg-mob.jpg') center top / cover no-repeat;
         &__block {
             max-width: 100%;
             padding: 56px 16px 56px 54px;
@@ -126,10 +121,24 @@
                 line-height: 140.9%;
             }
         }
+    }
+}
+@media (max-width: 500px) {
+    .areas {
+        min-height: 840px;
         &__wrapper {
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .areas {
+        &__title {
+            text-align: left;
+            margin: 0 auto;
         }
     }
 }

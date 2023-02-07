@@ -117,10 +117,10 @@
     }
 }
 
-@media (max-width: 575px)  {
+@media (max-width: 1023px)  {
     .promo {
         min-height: 620px;
-        background: url('../img/promo-bg-mob.jpg') center center / cover no-repeat;
+        background: url('../img/promo-bg-mob.jpg') center top / cover no-repeat;
         padding-bottom: 30px;
         display: flex;
         flex-direction: column;
@@ -134,7 +134,7 @@
         }
         &__block {
             max-width: 100%;
-            padding: 37px 73px 37px 18px;
+            padding: 37px 52px 37px 18px;
         }
         &__subtitle {
             font-size: 13px;

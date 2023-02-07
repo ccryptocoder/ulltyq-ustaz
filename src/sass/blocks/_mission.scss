@@ -1,13 +1,12 @@
 .mission {
     padding: 140px 0;
-    background: url('../img/mission-bg.jpg') center center / cover no-repeat;
+    background: url('../img/mission-bg.jpg') center bottom / cover no-repeat;
     &__row {
         display: flex;
     }
     &__block {
         min-height: 390px;
         padding: 60px 80px 100px 135px;
-        // max-width: 735px;
         border-radius: 0px 261px 261px 0px;
         &:nth-child(1) {
             color: #314C60;
@@ -37,7 +36,6 @@
         font-family: 'Philosopher';
         font-weight: 400;
         font-size: 64px;
-        // line-height: 166.4%;
         position: relative;
         &::before {
             content: '';
