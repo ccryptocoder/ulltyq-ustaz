@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
-    new WOW().init();
+    new WOW({
+        animateClass: 'animate__animated'
+    }).init();
     
     const popupOpen = Array.from(document.querySelectorAll('[data-popup-open]'));
     const popupClose = document.querySelector('[data-popup-close]');
